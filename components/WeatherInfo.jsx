@@ -85,9 +85,11 @@ const WeatherInfo = ({ query }) => {
       ) : (
         // If the reponse status is not 200, then error is shown
         <>
-          <div className="flex flex-col mt-20 mx-auto items-center">
+          <div className="flex flex-col mt-20 mx-auto items-center px-3">
             <BiSolidErrorCircle size={70} />
-            Could not find the entered location, please check again
+            <p className=" text-center">
+              Could not find the entered location, please check again
+            </p>
           </div>
         </>
       )}
